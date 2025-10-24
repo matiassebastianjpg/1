@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimentación Saludable - Tupiza</title>
+  <style>
+    /* ===== Reset básico ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f8ff; /* Azul muy suave */
+      color: #333;
+    }
+
+    /* ===== Encabezado ===== */
+    header {
+      background-color: #007acc; /* Azul fuerte */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      background-color: #00b359; /* Verde saludable */
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #005f99;
+    }
+
+    /* Dropdown */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00b359;
+      list-style: none;
+      padding: 0;
+      min-width: 200px;
+      z-index: 1000;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px 15px;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #005f99;
+    }
+
+    /* ===== Secciones ===== */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #007acc;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* ===== Imágenes ===== */
+    .imagenes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .imagenes img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Alimentación Saludable en Tupiza</h1>
+    <p>Aprende, disfruta y cuida tu salud</p>
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#grupos">Grupos de Alimentos</a>
+        <ul>
+          <li><a href="#frutas">Frutas</a></li>
+          <li><a href="#verduras">Verduras</a></li>
+          <li><a href="#cereales">Cereales</a></li>
+          <li><a href="#proteinas">Proteínas</a></li>
+          <li><a href="#grasas">Grasas Saludables</a></li>
+        </ul>
+      </li>
+      <li><a href="#recetas">Recetas Saludables</a></li>
+      <li><a href="#consejos">Consejos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Descubre cómo mejorar tu alimentación y llevar hábitos saludables en tu día a día. Esta plataforma educativa te guiará para conocer los alimentos, combinarlos correctamente y disfrutar de comidas deliciosas y nutritivas.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1572448862527-185ef2e5c47b" alt="Comida saludable 1">
+      <img src="https://images.unsplash.com/photo-1543352634-2a36de6b38b1" alt="Comida saludable 2">
+      <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443" alt="Comida saludable 3">
+    </div>
+  </section>
+
+  <!-- SECCIÓN GRUPOS DE ALIMENTOS -->
+  <section id="grupos">
+    <h2>Grupos de Alimentos</h2>
+    <p>Aprende los grupos básicos de alimentos y cómo cada uno contribuye a tu salud:</p>
+  </section>
+
+  <section id="frutas">
+    <h2>Frutas</h2>
+    <p>Ricas en vitaminas, minerales y fibra. Ayudan a prevenir enfermedades y mejorar la digestión.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e38e" alt="Frutas">
+      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc" alt="Frutas">
+    </div>
+  </section>
+
+  <section id="verduras">
+    <h2>Verduras</h2>
+    <p>Fuente de vitaminas, antioxidantes y fibra. Ideales para mantener un cuerpo saludable y prevenir enfermedades.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Verduras">
+      <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4" alt="Verduras">
+    </div>
+  </section>
+
+  <section id="cereales">
+    <h2>Cereales</h2>
+    <p>Proporcionan energía y fibra. Es recomendable elegir integrales para mantener un sistema digestivo saludable.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1598375739773-8e73e3be78f1" alt="Cereales">
+      <img src="https://images.unsplash.com/photo-1604908177527-82cf9ee3f7f8" alt="Cereales">
+    </div>
+  </section>
+
+  <section id="proteinas">
+    <h2>Proteínas</h2>
+    <p>Fundamentales para construir y reparar tejidos. Pueden provenir de carnes magras, huevos, legumbres y frutos secos.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1598514982732-9937f2853f7a" alt="Proteínas">
+      <img src="https://images.unsplash.com/photo-1587394376432-fd2dc5e0f83f" alt="Proteínas">
+    </div>
+  </section>
+
+  <section id="grasas">
+    <h2>Grasas Saludables</h2>
+    <p>Esenciales para el funcionamiento del cerebro y corazón. Incluyen aceite de oliva, aguacate y frutos secos.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1592928300301-5d7c2f1762ec" alt="Grasas saludables">
+      <img src="https://images.unsplash.com/photo-1617196036793-6c6b34fda44a" alt="Grasas saludables">
+    </div>
+  </section>
+
+  <!-- SECCIÓN RECETAS -->
+  <section id="recetas">
+    <h2>Recetas Saludables</h2>
+    <p>Explora recetas fáciles, rápidas y nutritivas para cada comida del día.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1512058564366-c9e7c3b3512b" alt="Receta saludable 1">
+      <img src="https://images.unsplash.com/photo-1556911073-52527ac437f5" alt="Receta saludable 2">
+      <img src="https://images.unsplash.com/photo-1604908177420-05e5b47f5e3f" alt="Receta saludable 3">
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONSEJOS -->
+  <section id="consejos">
+    <h2>Consejos</h2>
+    <p>Pequeños cambios diarios pueden hacer una gran diferencia en tu salud. Aprende a planificar, combinar y disfrutar tus alimentos.</p>
+    <div class="imagenes">
+      <img src="https://images.unsplash.com/photo-1604908177440-1e1c0db5f41b" alt="Consejo saludable 1">
+      <img src="https://images.unsplash.com/photo-1562059390-a761a084768d" alt="Consejo saludable 2">
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Si tienes dudas o quieres compartir tus experiencias, contáctanos por correo: <strong>info@alimentacionsaludable.com</strong></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Alimentación Saludable - Tupiza</p>
+  </footer>
+
+</body>
+</html>
